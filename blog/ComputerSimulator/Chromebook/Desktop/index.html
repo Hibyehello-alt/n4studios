@@ -72,8 +72,8 @@
     </div>
     
     <div id="devConsole" class="dev-console">
-      <div class="dev-console-inner">
-        <div class="app-menu">
+      <div class="dev-console-inner resizable-win">
+        <div id="devConsoleheader" class="app-menu">
           <p>Dev Console</p>
           <img class="app-menu-close" src="img/close_black_24dp.svg" onclick="closeDevConsole();">
         </div>
@@ -88,7 +88,7 @@
     </div>
     
     <div id="settingsWallpaper" class="settings">
-      <div id="windowMenu" class="window-Menu">
+      <div id="settingsWallpaperheader" class="window-Menu">
         <table>
           <tr>
             <td id="settingsMinimize" class="settings-option" onmousedown="closeWallpaper();" onmouseover="svgHover('settingsExit')" onmousemove="svgLeave('settingsExit')">
@@ -884,7 +884,7 @@
       </div><!-- window-Chrome -->
     </div><!-- window-App -->
     
-    <div id="desktop" class="desktop" onmouseenter="deskClick();" onmousedown="closeWallpaper();" onclick="rightClick('close');">
+    <div id="desktop" class="desktop" onmouseenter="deskClick();" onmousedown="closeWallpaper();" onclick="rightClick('close'); deskClick();">
       <img id="background" class="background" alt="defaultWallpaper">
       <div id="searchApps" class="searchApps-Closed">
         <div id="searchApps-Center" class="searchApps-Center">
